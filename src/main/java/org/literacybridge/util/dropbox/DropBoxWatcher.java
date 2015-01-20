@@ -1,10 +1,19 @@
-// Include the Dropbox SDK.
+package org.literacybridge.util.dropbox;
+
 import com.dropbox.core.*;
 import java.io.*;
 import java.util.Locale;
 
 public class DropBoxWatcher {
 
+
+    // TODO: Pass in app key and app secret as variables
+    // TODO: Pass in the auth code as a variabl
+    // TODO: If no auth code, kick off the interaction with the UI to go get one
+    
+    // TODO: General API then becomes one of setting the variables, and saying 'watch <filename(s)>'
+    // TODO: Support wildcards via Commons IO
+    // TODO: Also set a Listener. Event's passed when a file is changed. 
     public static void main(String[] args) throws IOException, DbxException {
         // Get your app key and secret from the Dropbox developers website.
         final String APP_KEY = "NEEDS SETTING";
